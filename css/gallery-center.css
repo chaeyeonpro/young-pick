@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 슬라이드배너 꾸미기 */
+.gallery-center {
+	width: 1320px;
+	height: 602px;
+	margin: 50px auto;
+	padding: 0 50px 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery-center_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+.gallery-center .swiper-slide a {
+	width: 100%;
+	height: 100px;
+	align-self: center;
+	transition: all 0.5s;
+}
+
+.gallery-center .swiper-slide img {
+	display: block;
+	width: 80%;
+	margin: auto;
+	transition: all 1s;
+}
+
+/*이동버튼 영역 색상 바꾸기*/
+.gallery-center .swiper-button-prev,
+.gallery-center .swiper-button-next {
+	color: rgb(255, 255, 255);
+}
+
+/*이동버튼 영역 호버 시 색상 바꾸기*/
+.gallery-center .swiper-button-prev:hover,
+.gallery-center .swiper-button-next:hover {
+	color: rgb(202, 202, 202);
+}
+
+/* 이동버튼 이미지로 바꾸기
+.gallery-center .swiper-button-prev,
+.gallery-center .swiper-button-next{
+	width: 50px;
+	height: 50px;
+}
+.gallery-center .swiper-button-prev:after,
+.gallery-center .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.gallery-center .swiper-button-prev:after{
+	background: url(../images/prev.png);
+}
+.gallery-center .swiper-button-next:after{
+	background: url(../images/next.png);
+}
+ */
+
+ .gallery-center .swiper-slide-active img
+ {
+	width: 100%;
+ }
+ .swiper-wrapper{
+	align-items: center;
+ }

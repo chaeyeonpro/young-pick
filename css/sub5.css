@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Nanum Gothic';
+    font-size: 20px;
+    line-height: 18px;
+    color: #000;
+    min-width: 1320px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #e93f90;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+/* 해더 */
+header {
+
+    width: 100%;
+    z-index: 10;
+
+}
+
+header div {
+    width: 1320px;
+    margin: 5px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+
+/* 네비 */
+.nav {
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'TmonMonsori';
+}
+
+.nav>li>a {
+    display: block;
+    padding: 15px 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav>li>a:hover {
+    color: #e93f90;
+}
+
+.nav>li {
+    position: relative;
+
+}
+
+
+.nav2 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.nav2 a {
+    display: block;
+    padding: 0 20px;
+}
+
+.nav2 a:hover img {
+    filter: sepia(1);
+}
+
+.nav2 .hart a:hover img {
+    filter: hue-rotate(40deg);
+}
+
+/* 서브메뉴 */
+.sub {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #e93f91e7;
+    z-index: 10;
+
+}
+
+.sub li a {
+    display: block;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.sub li a:hover {
+    color: #e93f90;
+    background-color: #000;
+}
+
+.nav>li {
+    position: relative;
+}
+
+/* 메인배너 */
+.mainbanner img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* 버튼 */
+.button{
+    width: 1320px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.button ul{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.button li{
+    border: 1px solid #000;
+    background-color: #000;
+    border-radius: 20px;
+}
+.button li a{
+    width: 240px;
+    color: #fff;
+    padding: 15px ;
+    display: block;
+    font-weight: bold;
+}
+
+.button li a:hover {
+    color: #e93f90;
+}
+
+/* 웰컴시작 */
+#welcom{
+    background: #fbd2f2;
+    width: 100%;
+    height: 816px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#welcom>h1{
+    font-size: 50px;
+    padding: 80px 0 20px 0;
+}
+
+#welcom img{
+    padding: 30px 0;
+}
+
+
+#welcom span{
+    color: red;
+}
+
+/* 프로덕트 시작 */
+#PRODUCT{
+    width: 1320px;
+    margin: auto;
+    text-align: center; 
+    line-height: 45px;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+
+#PRODUCT h1{
+    padding: 100px 0 30px 0;
+    font-size: 50px;
+}
+
+#PRODUCT span{
+    font-size: 40px;
+    color: red;
+}
+
+#PRODUCT ul{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#PRODUCT ul img{
+    transition: all 0.8s;
+}
+#PRODUCT ul img:hover{
+    box-shadow: 5px 5px 5px #000;
+    transition: all 0.8s;
+}
+
+
+/* 레벨 */
+#level{
+    background: url(../sub_5img/level.jpg) no-repeat 50% 0;
+    background-size: cover;
+    width: 100%;
+    height: 1257px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    padding-top: 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+#level h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#level p{
+    font-size: 30px;   
+}
+
+#level ul{
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#level ul li{
+    padding: 30px 0;
+}
+
+#level p{
+    padding: 20px 0;
+}
+
+
+/* 푸터 시작 */
+footer {
+    background-color: #000;
+    color: #b0afaf;
+    line-height: 30px;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 100%;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 30PX;
+    padding-bottom: 50px;
+}
+
+footer a {
+    color: #b0afaf;
+    padding: 0 30px 0 0;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer ul {
+    width: 100%;
+    margin: 50px 0px 70px 0;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+h4 {
+    color: #fff;
+}
+
+

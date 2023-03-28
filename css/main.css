@@ -1,0 +1,399 @@
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Gowun Batang',
+serif;
+font-family: 'Noto Sans KR',
+sans-serif;
+font-family: 'Rubik Bubbles',
+cursive; */
+
+/* font-family: 'Gowun Batang', serif; 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Rubik Bubbles', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@100;400;700&family=Rubik+Bubbles&display=swap');
+
+@font-face {
+    font-family: 'PuradakGentleGothicR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Nanum Gothic';
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #e93f90;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+/* 해더 */
+header {
+
+    width: 100%;
+    z-index: 10;
+
+}
+
+header div {
+    width: 1320px;
+    margin: 5px auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -101px;
+}
+
+/* 네비 */
+.nav {
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'TmonMonsori';
+}
+
+.nav>li>a {
+    display: block;
+    padding: 15px 50px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav>li>a:hover {
+    color: #e93f90;
+}
+
+.nav>li {
+    position: relative;
+
+}
+
+
+.nav2 {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.nav2 a {
+    display: block;
+    padding: 0 20px;
+}
+
+.nav2 a:hover img {
+    filter: sepia(1);
+}
+
+.nav2 .hart a:hover img {
+    filter: hue-rotate(40deg);
+}
+
+/* 서브메뉴 */
+.sub {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #e93f91e7;
+    z-index: 10;
+
+}
+
+.sub li a {
+    display: block;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+.sub li a:hover {
+    color: #e93f90;
+    background-color: #000;
+}
+
+.nav>li {
+    position: relative;
+}
+
+/* 베스트 제품 */
+.best {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.best_inner {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-family: 'TmonMonsori';
+    padding: 60px 0 10px 0;
+}
+
+.best_inner>a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #e93f90;
+    border-radius: 20px;
+    padding: 3px 20px;
+    margin-bottom: 50px;
+}
+
+.best_inner>a:hover {
+    box-shadow: 3px 3px 0px rgb(233, 63, 144);
+    background-color: #e93f90;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.best_img {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    text-align: left;
+}
+
+.best span {
+    color: red;
+}
+
+.best h5 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.best p a {
+    color: #fff;
+}
+
+.best_1 a {
+    position: relative;
+    display: block;
+}
+
+.b1-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.best_1 a:hover .b1-1 {
+    opacity: 1;
+}
+
+/* 베스트 끝 */
+
+/* 이벤트 시작 */
+.event {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.event p {
+    text-align: center;
+    padding: 20px 0 40px 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/* 이벤트 끝 */
+
+/* 스타일보드 시작 */
+.style {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    color: #e93f90;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.style_img {
+    display: block;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Gowun Batang', serif;
+    font-weight: bolder;
+    font-size: 55PX;
+}
+
+.style>a {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    padding: 2px 20px;
+    margin: 50px 0 0 0;
+    font-size: small;
+}
+
+.style>a:hover {
+    box-shadow: 3px 3px 0px rgb(255, 255, 255);
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+
+}
+
+/* 스타일 끝 */
+
+/* 리뷰시작 */
+.riview {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+h3 {
+    text-align: center;
+    margin: 70px 0 30px 0;
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.riview_img {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* 리뷰 끝 */
+
+/* 푸터 시작 */
+footer {
+    background-color: #000;
+    color: #b0afaf;
+    line-height: 30px;
+}
+
+.footer_inner {
+    width: 1320px;
+    height: 100%;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 30PX;
+    padding-bottom: 50px;
+}
+
+footer a {
+    color: #b0afaf;
+    padding: 0 30px 0 0;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer ul {
+    width: 100%;
+    margin: 50px 0px 70px 0;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+h4 {
+    color: #fff;
+}
