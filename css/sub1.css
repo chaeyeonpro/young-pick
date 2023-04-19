@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
 
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -80,6 +87,7 @@ header div {
     padding: 15px 50px;
     font-weight: bold;
     font-size: 30px;
+    font-family: 'TmonMonsori';
 }
 
 .nav>li>a:hover {
